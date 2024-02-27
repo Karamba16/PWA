@@ -15,7 +15,7 @@ function App() {
     const [selectedStudent, setSelectedStudent] = useState<Student | undefined>(undefined)
 
     return (
-        <BrowserRouter basename="/bmstu-frontend">
+        <BrowserRouter basename="/pwa">
 
             <div className="App">
 
