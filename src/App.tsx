@@ -1,5 +1,5 @@
-import "./styles/main.sass"
-import "./styles/reset.sass"
+import "./Styles/Main.sass"
+import "./Styles/Reset.sass"
 import { useState } from 'react'
 import Header from "./Components/Header/Header";
 import {Student} from "./utils/types";
