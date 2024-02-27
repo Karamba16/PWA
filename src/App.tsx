@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Header from "./Components/Header/Header";
 import {Student} from "./utils/types";
 import Breadcrumbs from "./Components/Breadcrumbs/Breadcrumbs";
-import {BrowserRouter, Route, Routes, Navigate} from 'react-router-dom';
+import {Route, Routes, Navigate, HashRouter} from 'react-router-dom';
 import StudentPage from "./pages/StudentPage/StudentPage";
 import StudentsList from "./pages/StudentsList/StudentsList";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
@@ -15,7 +15,7 @@ function App() {
     const [selectedStudent, setSelectedStudent] = useState<Student | undefined>(undefined)
 
     return (
-        <BrowserRouter basename="/pwa">
+        <HashRouter>
 
             <div className="App">
 
@@ -47,7 +47,7 @@ function App() {
 
             </div>
 
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
